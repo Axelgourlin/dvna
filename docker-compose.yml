@@ -10,6 +10,7 @@ services:
       - 9090:9090
     volumes:
       - .:/app
+      - /app/node_modules
     depends_on:
       - mysql-db
     env_file:
